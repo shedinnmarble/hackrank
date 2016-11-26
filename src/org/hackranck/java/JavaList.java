@@ -1,4 +1,4 @@
-package edu.java.practice;
+package org.hackranck.java;
 
 import com.daxiang.utilizaition.Stopwatch;
 
