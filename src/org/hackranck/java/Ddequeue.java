@@ -22,6 +22,7 @@ public class Ddequeue {
                 int first = deque.remove();
                 if (!deque.contains(first)) set.remove(first);
 
+
 //                long count = deque.stream().distinct().count();
 //                if (count > max) {
 //                    max = count;
