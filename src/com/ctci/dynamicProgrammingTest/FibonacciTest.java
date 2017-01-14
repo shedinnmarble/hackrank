@@ -15,19 +15,28 @@ public class FibonacciTest {
 
     @Test
     public void test() {
-        assertEquals(0, fibonacci.fibonacci(0));
-        assertEquals(1, fibonacci.fibonacci(1));
+//        assertEquals(0, fibonacci.fibonacci(0));
+//        assertEquals(1, fibonacci.fibonacci(1));
         assertEquals(233, fibonacci.fibonacci(13));
-        assertEquals(6765, fibonacci.fibonacci(20));
+//        assertEquals(6765, fibonacci.fibonacci(20));
+
+    }
+
+    @Test
+    public void testOriginal() {
+//        assertEquals(0, fibonacci.fibonacci(0));
+//        assertEquals(1, fibonacci.fibonacci(1));
+        assertEquals(8, fibonacci.fibonacciOriginal(6));
+//        assertEquals(6765, fibonacci.fibonacci(20));
 
     }
 
     @Test
     public void testBottomUp() {
-        assertEquals(0, fibonacci.fibonacciBottomUp(0));
-        assertEquals(1, fibonacci.fibonacciBottomUp(1));
-        assertEquals(233, fibonacci.fibonacciBottomUp(13));
-        assertEquals(6765, fibonacci.fibonacciBottomUp(20));
+//        assertEquals(0, fibonacci.fibonacciBottomUp(0));
+//        assertEquals(1, fibonacci.fibonacciBottomUp(1));
+        assertEquals(233, fibonacci.fibonacciBottomUp(5));
+//        assertEquals(6765, fibonacci.fibonacciBottomUp(20));
 
     }
 
@@ -42,5 +51,10 @@ public class FibonacciTest {
         Throwable exception = expectThrows(Exception.class, () -> fibonacci.fibnacciNoMemo(-11));
         assertEquals("input can not less than 0", exception.getMessage());
 
+    }
+
+    @Test
+    public void testRecurision(){
+        Assertions.assertEquals(0,fibonacci.summation(3,10));
     }
 }

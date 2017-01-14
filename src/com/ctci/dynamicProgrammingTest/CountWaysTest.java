@@ -12,6 +12,6 @@ public class CountWaysTest {
     @Test
     public void test() {
             assertEquals(4,countWays.countWays(3));
-      //  assertEquals(4,countWays.countWays(30));
+        assertEquals(44,countWays.countWays(7));
     }
 }
